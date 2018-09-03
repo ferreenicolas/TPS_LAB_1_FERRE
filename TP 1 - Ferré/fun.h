@@ -44,5 +44,6 @@ int factorial(int);
 int getInt(void);
 float getFloat(void);
 char getChara(void);
+void menuUno(void);
 
 #endif // FUNCIONES_H_INCLUDED
