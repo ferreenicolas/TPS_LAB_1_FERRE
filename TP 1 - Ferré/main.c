@@ -18,7 +18,6 @@ int main()
 {
     char seguir='s';
     int opcion=0;
-    int opcionDos=0;
     float numeroUno=0;
     float numeroDos=0;
     float resultadoSuma;
@@ -27,9 +26,8 @@ int main()
     float resultadoMultiplicacion;
     float resultadoFactorialA;
     float resultadoFactorialB;
-
-
-
+    int flagA = 0;
+    int flagB = 0;
     while(seguir =='s')
     {
         system("cls");
@@ -46,39 +44,30 @@ int main()
         case 1:
                 printf("Ingresar 1er operando (A=%.f): \n", numeroUno);
                 scanf("%f", &numeroUno);
+                flagA = 1;
                 system("pause");
                 break;
         case 2:
                 printf("Ingresar 2do operando (B=%.f)\n", numeroDos);
                 scanf("%f", &numeroDos);
+                flagB = 1;
                 system("pause");
                 break;
         case 3:
-            menuUno();
-            scanf("%d", &opcionDos);
-            switch(opcionDos)
-            {
-                case 1:
+            if(flagA == 1 && flagB == 1){
                     resultadoSuma = suma(numeroUno, numeroDos);
-                    continue;
-                case 2:
-                    resultadoResta = resta(numeroUno, numeroDos);
-                    continue;
-                case 3:
-                    resultadoDivision = division(numeroUno, numeroDos);
-                    continue;
-                case 4:
-                    resultadoMultiplicacion =multiplicacion(numeroUno, numeroDos);
-                    continue;
-                case 5:
-                    resultadoFactorialA = factorial(numeroUno);
-                    resultadoFactorialB = factorial(numeroDos);
-                    continue;
-                case 6:
-
-                    continue;
-            }
+            resultadoResta = resta(numeroUno, numeroDos);
+            resultadoDivision = division(numeroUno, numeroDos);
+            resultadoMultiplicacion =multiplicacion(numeroUno, numeroDos);
+            resultadoFactorialA = factorial(numeroUno);
+            resultadoFactorialB = factorial(numeroDos);
+            printf("Se han realizado todas las operaciones.\n");
             system("pause");
+            }else{
+                printf("No ha ingresado todos los operadores.\n");
+                system("pause");
+            }
+
             break;
 
         case 4:

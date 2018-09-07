@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1536009338 source:c:\users\nicolás ferré\desktop\tp 1 - ferré\fun.c
+1536278820 source:c:\users\nicolás ferré\desktop\tp 1 - ferré\fun.c
 	<stdio.h>
 	<stdlib.h>
 	"fun.h"
 
-1536008821 c:\users\nicolás ferré\desktop\tp 1 - ferré\fun.h
+1536278820 c:\users\nicolás ferré\desktop\tp 1 - ferré\fun.h
 
-1536009847 source:c:\users\nicolás ferré\desktop\tp 1 - ferré\main.c
+1536010503 source:c:\users\nicolás ferré\desktop\tp 1 - ferré\main.c
 	<stdio.h>
 	<stdlib.h>
 	"fun.h"

@@ -41,9 +41,5 @@ int factorial(int);
  * \return Devuelve un entero.
  *
  */
-int getInt(void);
-float getFloat(void);
-char getChara(void);
-void menuUno(void);
 
 #endif // FUNCIONES_H_INCLUDED
